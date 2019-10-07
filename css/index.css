@@ -156,7 +156,6 @@ h5 {
 
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 .flexContain1 {
     display: flex;
     flex-direction: row;
@@ -194,6 +193,7 @@ button {
     width: 200px;
     background: white;
     margin: 20px;
+    margin-bottom: 35px;
 }
 
 .flexCodePic {
@@ -215,6 +215,7 @@ button {
     flex-direction: row;
     flex-wrap: nowrap;
     border-bottom: solid;
+    padding: 10px;
 }
 
 .service {
@@ -229,6 +230,17 @@ button {
     height: 100px;
 }
 
+.text{
+    line-height: 30px;
+
+}
+
+p{
+    justify-content: space-between;
+}
+
+
+
 @media(max-width:800px){
     .flexCodePic{
         display:none;
@@ -236,5 +248,37 @@ button {
 
     .flexContain1{
         flex-direction: column-reverse;
+    }
+
+    .flexContain2{
+        justify-content: center;
+
+    }
+}
+
+@media(max-width: 500px){
+    .flex1{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .featuresAndAbout{
+        flex-direction: column;
+        padding:10px;
+        margin: 15px;
+        margin-top: 10px;
+    }
+
+    .servicesProductVision{
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .footer{
+        justify-content: flex-start;
     }
 }
