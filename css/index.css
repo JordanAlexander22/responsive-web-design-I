@@ -254,6 +254,10 @@ p{
         justify-content: center;
 
     }
+
+    .servicesProductVision{
+        height: 200px;
+    }
 }
 
 @media(max-width: 500px){
@@ -280,5 +284,11 @@ p{
 
     .footer{
         justify-content: flex-start;
+    }
+    
+    .copyrightContain{
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
     }
 }
