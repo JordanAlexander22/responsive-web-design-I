@@ -211,14 +211,14 @@ button {
 
 .servicesProductVision {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
     border-bottom: solid;
     padding: 10px;
 }
 
-.service {
+/*.service {
     height: 100px;
 }
 
@@ -229,7 +229,7 @@ button {
 .vision {
     height: 100px;
 }
-
+*/
 .text{
     line-height: 30px;
 
@@ -255,10 +255,15 @@ p{
 
     }
 
-    .servicesProductVision{
+    /*.servicesProductVision{
         height: 200px;
     }
+*/
+    .footer{
+        margin: 30px;
+    }
 }
+
 
 @media(max-width: 500px){
     .flex1{
@@ -284,11 +289,16 @@ p{
 
     .footer{
         justify-content: flex-start;
+        margin: 50px;
     }
     
     .copyrightContain{
         flex-direction: row;
         text-align: center;
         align-items: center;
+    }
+
+    .flexcontain2{
+
     }
 }
