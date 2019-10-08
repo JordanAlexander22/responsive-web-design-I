@@ -1,3 +1,304 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
 
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.flexContain1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around
+}
+
+.flex1 {
+    display: flex;
+}
+
+.nav {
+    text-decoration: none;
+    color: gray;
+    padding: 20px;
+}
+
+.flexContain2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 50px;
+}
+
+button {
+    font-size: 20px;
+    width: 200px;
+    background: white;
+    margin: 20px;
+    margin-bottom: 35px;
+}
+
+.flexCodePic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 90px
+}
+
+.featuresAndAbout {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid;
+}
+
+.servicesProductVision {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: solid;
+    padding: 10px;
+}
+
+/*.service {
+    height: 100px;
+}
+
+.product {
+    height: 100px;
+}
+
+.vision {
+    height: 100px;
+}
+*/
+.text{
+    line-height: 30px;
+
+}
+
+p{
+    justify-content: space-between;
+}
+
+
+
+@media(max-width:800px){
+    .flexCodePic{
+        display:none;
+    }
+
+    .flexContain1{
+        flex-direction: column-reverse;
+    }
+
+    .flexContain2{
+        justify-content: center;
+
+    }
+
+    /*.servicesProductVision{
+        height: 200px;
+    }
+*/
+    .footer{
+        margin: 30px;
+    }
+}
+
+
+@media(max-width: 500px){
+    .flex1{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .featuresAndAbout{
+        flex-direction: column;
+        padding:10px;
+        margin: 15px;
+        margin-top: 10px;
+    }
+
+    .servicesProductVision{
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .footer{
+        justify-content: flex-start;
+        margin: 50px;
+    }
+    
+    .copyrightContain{
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+    }
+
+    .flexcontain2{
+
+    }
+}
